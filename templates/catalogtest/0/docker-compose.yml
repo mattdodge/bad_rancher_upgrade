@@ -5,3 +5,4 @@ services:
     labels:
       io.rancher.container.pull_image: always
       lb_selector: test
+      my_alias: ${host_alias}
