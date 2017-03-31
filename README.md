@@ -1,0 +1,3 @@
+This gist/repo can be used as a custom catalog in Rancher to test the effect of upgrades.
+  
+The theory/proposed issue is that upgrading a stack from a custom catalog and changing the answer to a question in the catalog template does not update the rancher-compose.yml file. I have noticed it not updating the hostname of the load balancer config, but it's possible it affects other parts of the file as well.
