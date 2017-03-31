@@ -18,8 +18,7 @@
 
 webby:
   scale: 1 
-  health_check:
-    request_line: ${host_alias}
+  start_on_create: ${host_alias}
   lb_config:
     port_rules:
       - target_port: 80
