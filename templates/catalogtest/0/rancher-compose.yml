@@ -18,7 +18,6 @@
 
 webby:
   scale: 1 
-  start_on_create: ${host_alias}
   lb_config:
     port_rules:
       - target_port: 80
