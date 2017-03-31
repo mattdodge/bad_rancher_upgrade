@@ -18,6 +18,8 @@
 
 webby:
   scale: 1 
+  labels:
+    - matmatt: ${host_alias}
   lb_config:
     port_rules:
       - target_port: 80
