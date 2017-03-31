@@ -1,0 +1,7 @@
+version: '2'
+services:
+  webby:
+    image: nginx/latest
+    labels:
+      io.rancher.container.pull_image: always
+      lb_selector: test

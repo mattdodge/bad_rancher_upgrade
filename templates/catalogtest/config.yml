@@ -1,0 +1,5 @@
+name: n.io Basic with Socket
+description: |
+  A n.io binary with an accompanying socket.io server. The binary uses file persistence and basic auth security
+version: 20170328.0.0
+category: n.io

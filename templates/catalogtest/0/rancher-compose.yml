@@ -1,0 +1,24 @@
+.catalog:
+   name: "Catalog Test"
+   version: "0.1.0" 
+   description: "Testing catalog thingy"
+   questions:
+     - variable: "host_alias"
+       description: |
+         The instance's alias or host name. This is how the container will be accessed as a URL
+       label: "Host Alias"
+       type: "string"
+       required: true
+     - variable: "host_root"
+       description: |
+         The root domain of the host
+       label: "Host Domain"
+       type: "string"
+       required: true
+
+webby:
+  scale: 1 
+  lb_config:
+    port_rules:
+      - target_port: 80
+        hostname: ${host_alias}.${host_root}
